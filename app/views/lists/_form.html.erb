@@ -1,6 +1,7 @@
 
-<%= form_with model: @list do |f| %>
-  <%= f.label :name %>
+<%= simple_form_for(list) do |f| %>
+  <%= f.label :Name %>
   <%= f.text_field :name %>
+  <%= f.input :photo, as: :file %>
   <%= f.submit %>
 <% end %>

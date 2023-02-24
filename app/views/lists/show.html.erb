@@ -1,5 +1,8 @@
+<div class="container">
 <h1>List Details</h1>
-<p><%= @list.name %></p>
+<p class="underline" ><%= @list.name %></p>
 
 <p><%= link_to "Return to Lists", lists_path %></p>
+<%= cl_image_tag @list.photo.key, height: 200, width: 200, crop: :fill %>
 <p><%= link_to "Add new Bookmark", new_list_bookmark_path(@list) %></p>
+</div>

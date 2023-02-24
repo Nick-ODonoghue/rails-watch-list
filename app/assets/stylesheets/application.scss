@@ -10,3 +10,46 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  // background-color: rgba($color: hsl(12, 30%, 80%), $alpha: 1.0);
+  background: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow: inset 20px 20px 60px #bebebe, inset -20px -20px 60px #ffffff,
+              20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  width: 600px;
+  padding: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+.form {
+  width: 75%;
+}
+
+h1 {
+  color: rgba($color: hsl(239, 54%, 77%), $alpha: 1.0);
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: rgba($color: hsl(12, 41%, 79%), $alpha: 1.0);
+  color: rgb(32, 32, 32);
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  border-radius: 7px;
+}
